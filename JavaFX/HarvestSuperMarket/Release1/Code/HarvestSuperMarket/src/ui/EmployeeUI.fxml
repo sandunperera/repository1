@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="" prefHeight="689.0" prefWidth="1212.0" styleClass="moduleui" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.EmployeeUIController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+<children><Pane layoutX="-2.0" layoutY="-3.0" prefHeight="62.0" prefWidth="1220.0" styleClass="topicback" /><Label layoutX="53.0" layoutY="14.0" styleClass="topic" text="Employee Management" /><Label layoutX="71.0048828125" layoutY="87.5" styleClass="att" text="Name" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><Label layoutX="71.0" layoutY="120.0" styleClass="att" text="Gender" /><Label layoutX="72.0" layoutY="444.0" styleClass="att" text="Assign Date" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><Label layoutX="71.0" layoutY="153.0" styleClass="att" text="Civilstatus" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><Label layoutX="71.0" layoutY="185.0" styleClass="att" text="Address" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><Label layoutX="70.0" layoutY="266.0" styleClass="att" text="Date of Birth" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><Label layoutX="72.0" layoutY="297.0" styleClass="att" text="NIC No." xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><Label layoutX="74.0" layoutY="328.0" styleClass="att" text="Mobile No." xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><Label layoutX="74.0" layoutY="360.0" styleClass="atto" text="Land No." xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><Label layoutX="73.0" layoutY="394.0" styleClass="atto" text="Email" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><Label layoutX="72.0" layoutY="423.0" styleClass="att" text="Designation" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><Label layoutX="71.0" layoutY="477.0" styleClass="atto" text="Image" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><TextField fx:id="txtName" layoutX="167.0" layoutY="84.0" onKeyReleased="#txtNameKR" prefHeight="25.0" prefWidth="191.0" promptText="Enter Name" /><ComboBox fx:id="cmbGender" layoutX="167.0" layoutY="116.0" onAction="#cmbGenderAP" prefHeight="25.0" prefWidth="191.0" promptText="Select Gender" xmlns:fx="http://javafx.com/fxml">
+  <items>
+    <FXCollections fx:factory="observableArrayList">
+      <String fx:value="Item 1" />
+      <String fx:value="Item 2" />
+      <String fx:value="Item 3" />
+    </FXCollections>
+  </items>
+</ComboBox><ComboBox fx:id="cmbCivilstatus" layoutX="167.0" layoutY="149.0" onAction="#cmbCivilstatusAP" prefHeight="25.0" prefWidth="191.0" promptText="Select Civilstatus" xmlns:fx="http://javafx.com/fxml">
+  <items>
+    <FXCollections fx:factory="observableArrayList">
+      <String fx:value="Item 1" />
+      <String fx:value="Item 2" />
+      <String fx:value="Item 3" />
+    </FXCollections>
+  </items>
+</ComboBox><TextArea fx:id="txaAddress" layoutX="164.0" layoutY="185.0" onKeyReleased="#txaAddressKR" prefHeight="62.0" prefWidth="197.0" promptText="Enter Address" /><DatePicker fx:id="dtpDOB" layoutX="167.0" layoutY="262.0" onAction="#dtpDobAP" prefHeight="25.0" prefWidth="191.0" promptText="Select Date of Birth" /><TextField fx:id="txtNIC" layoutX="167.0" layoutY="293.0" onKeyReleased="#txtNicKR" prefHeight="25.0" prefWidth="191.0" promptText="Enter NIC No" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><TextField fx:id="txtMobile" layoutX="167.0" layoutY="324.0" onKeyReleased="#txtMobileKR" prefHeight="25.0" prefWidth="191.0" promptText="Enter Mobile No" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><TextField fx:id="txtLand" layoutX="167.0" layoutY="356.0" onKeyReleased="#txtLandKR" prefHeight="25.0" prefWidth="191.0" promptText="Enter Land No" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><TextField fx:id="txtEmail" layoutX="167.0" layoutY="390.0" onKeyReleased="#txtEmailKR" prefHeight="25.0" prefWidth="191.0" promptText="Enter Email" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><ComboBox fx:id="cmbDesignation" layoutX="167.0" layoutY="419.0" onAction="#cmbDesignationAP" prefHeight="25.0" prefWidth="191.0" promptText="Select Designation" xmlns:fx="http://javafx.com/fxml">
+  <items>
+    <FXCollections fx:factory="observableArrayList">
+      <String fx:value="Item 1" />
+      <String fx:value="Item 2" />
+      <String fx:value="Item 3" />
+    </FXCollections>
+  </items>
+</ComboBox><DatePicker fx:id="dtpAssign" layoutX="167.0" layoutY="449.0" onAction="#dtpAssignAP" prefHeight="25.0" prefWidth="191.0" promptText="Select Assign Date" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><Button fx:id="btnImage" layoutX="252.0" layoutY="482.0" mnemonicParsing="false" onAction="#btnImageAP" onKeyPressed="#btnImageKP" prefHeight="25.0" prefWidth="106.0" text="Select Image" /><Button fx:id="btnImageClear" layoutX="252.0" layoutY="512.0" mnemonicParsing="false" onAction="#btnImageClearAP" onKeyPressed="#btnImageClearKP" prefHeight="25.0" prefWidth="106.0" text="Clear Image" /><Button fx:id="btnAdd" layoutX="290.0" layoutY="565.0" mnemonicParsing="false" onAction="#btnAddAP" onKeyPressed="#btnAddKP" prefHeight="25.0" prefWidth="68.0" text="Add" /><Button fx:id="btnClear" layoutX="220.0" layoutY="565.0" mnemonicParsing="false" onAction="#btnClearAP" onKeyPressed="#btnClearKP" prefHeight="25.0" prefWidth="64.0" text="Clear" /><Button fx:id="btnUpdate" layoutX="66.0" layoutY="565.0" mnemonicParsing="false" onAction="#btnUpdateAP" onKeyPressed="#btnUpdateKP" prefHeight="25.0" prefWidth="64.0" text="Update" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><Button fx:id="btnDelete" layoutX="139.0" layoutY="565.0" mnemonicParsing="false" onAction="#btnDeleteAP" onKeyPressed="#btnDeleteKP" prefHeight="25.0" prefWidth="64.0" text="Delete" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" /><TextField fx:id="txtSearchName" layoutX="548.0" layoutY="104.0" onKeyReleased="#txtSearchNameKR" prefHeight="25.0" prefWidth="243.0" promptText="Enter Name" /><ComboBox fx:id="cmbSearchDesignation" layoutX="548.0" layoutY="137.0" onAction="#cmbSearchDesignationAP" prefHeight="25.0" prefWidth="243.0" promptText="Select Designation" xmlns:fx="http://javafx.com/fxml">
+  <items>
+    <FXCollections fx:factory="observableArrayList">
+      <String fx:value="Item 1" />
+      <String fx:value="Item 2" />
+      <String fx:value="Item 3" />
+    </FXCollections>
+  </items>
+</ComboBox><ComboBox fx:id="cmbSearchGender" layoutX="548.0" layoutY="169.0" onAction="#cmbSearchGenderAP" prefHeight="25.0" prefWidth="243.0" promptText="Select Gender" xmlns:fx="http://javafx.com/fxml">
+  <items>
+    <FXCollections fx:factory="observableArrayList">
+      <String fx:value="Item 1" />
+      <String fx:value="Item 2" />
+      <String fx:value="Item 3" />
+    </FXCollections>
+  </items>
+</ComboBox><Button fx:id="btnSearchClear" layoutX="809.0" layoutY="137.0" mnemonicParsing="false" onAction="#btnSearchClearAP" onKeyPressed="#btnSearchClearKP" prefHeight="25.0" prefWidth="85.0" text="Clear" /><Button fx:id="btnSearchLock" layoutX="809.0" layoutY="169.0" mnemonicParsing="false" onAction="#btnSearchLockAP" onKeyPressed="#btnSearchLockKP" prefHeight="25.0" prefWidth="85.0" text="Lock " /><ImageView fx:id="imgEmployee" fitHeight="44.0" fitWidth="68.0" layoutX="171.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image smooth="false" url="file:/H:/EarthUniversityCollege/Release1/Code/EarthUniversityCollege/src/image/p1.png" />
+</image></ImageView><TableView fx:id="tblEmployee" layoutX="437.0" layoutY="213.0" onKeyReleased="#tblEmployeeKR" onMouseClicked="#tblEmployeeMC" prefHeight="251.0" prefWidth="647.0" xmlns:fx="http://javafx.com/fxml">
+<columns><TableColumn fx:id="colName" minWidth="175.0" prefWidth="75.0" text="Name" /><TableColumn fx:id="colGender" minWidth="100.0" prefWidth="75.0" text="Gender" /><TableColumn fx:id="colMobile" minWidth="125.0" prefWidth="75.0" text="Mobile Phone" /><TableColumn fx:id="colEmail" minWidth="125.0" prefWidth="75.0" text="Email" /><TableColumn id="" fx:id="colDesignation" minWidth="120.0" prefWidth="75.0" text="Designation" />
+</columns></TableView><Pagination fx:id="pagination" layoutX="437.0" layoutY="211.0" prefHeight="251.0" prefWidth="647.0" /><Label layoutX="437.0" layoutY="145.0" text="Designation" /><Label layoutX="437.0" layoutY="108.0" text="Name" /><Label layoutX="437.0" layoutY="185.0" text="Gender" /><Label fx:id="lblDesiignationNew" layoutX="368.0" layoutY="423.0" onMouseClicked="#lblDesignationNewMC" text="New">
+<cursor>
+<Cursor fx:constant="HAND" />
+</cursor></Label><TextArea fx:id="txaRecord" layoutX="437.0" layoutY="491.0" prefHeight="99.0" prefWidth="647.0" />
+</children>
+</AnchorPane>

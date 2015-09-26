@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+   
+    
+
+}
+ .dlg{ -fx-font-size:24px;}
+ 
+ 
+ .topic {-fx-font-size:24px; -fx-text-fill: #ffffff;}
+    
+    .topicback{ -fx-background-image:url('../image/foot.jpg'); }
+    
+    TextArea, TextField,ComboBox,DatePicker,TableView{
+        -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.6),5,0.0,0,1);}
+    
+    TableView{ -fx-background-color:#cccccc;}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ui.MainWindowController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   <children>
+      <MenuBar layoutX="4.0" layoutY="2.0" prefHeight="25.0" prefWidth="593.0">
+        <menus>
+          <Menu fx:id="mnuPeople" mnemonicParsing="false" text="People">
+            <items>
+              <MenuItem fx:id="mtmEmployee" mnemonicParsing="false" onAction="#mtmEmployeeAP" text="Employee" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane fx:id="sptMain" dividerPositions="0.29797979797979796" layoutX="-2.0" layoutY="29.0" prefHeight="768.0" prefWidth="1366.0">
+        <items>
+          <AnchorPane fx:id="apnLeft" minHeight="0.0" minWidth="0.0" prefHeight="768.0" prefWidth="1366.0">
+               <children>
+                  <ImageView fx:id="imgLogo" fitHeight="91.0" fitWidth="130.0" layoutX="23.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/earthuniversity.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="apnRight" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
